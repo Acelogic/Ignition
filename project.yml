@@ -1,0 +1,31 @@
+name: Ignition
+options:
+  bundleIdPrefix: com.acelogic
+  deploymentTarget:
+    macOS: "15.0"
+  xcodeVersion: "16.0"
+  minimumXcodeGenVersion: "2.0"
+
+targets:
+  Ignition:
+    type: application
+    platform: macOS
+    sources:
+      - Ignition
+    dependencies:
+      - sdk: libsqlite3.tbd
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.acelogic.ignition
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: "6.0"
+        MACOSX_DEPLOYMENT_TARGET: "15.0"
+        INFOPLIST_FILE: Ignition/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: false
+        ENABLE_HARDENED_RUNTIME: true
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_STRICT_CONCURRENCY: complete
+    info:
+      path: Ignition/Info.plist
