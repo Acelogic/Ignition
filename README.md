@@ -8,6 +8,23 @@ Ignition is a free, open-source alternative to LaunchControl.
 ![Swift 6](https://img.shields.io/badge/Swift-6-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+## Screenshots
+
+### Agent List
+Browse agents across all launchd domains with status indicators, tags, and search filtering.
+
+![Agent List](docs/screenshots/agent-list.png)
+
+### Agent Detail
+Full agent detail view with action buttons, configuration properties, activity history, and plist editor.
+
+![Agent Detail](docs/screenshots/agent-detail.png)
+
+### Health Dashboard
+At-a-glance system health with overview cards, problem agent detection, and resource monitoring for running agents.
+
+![Health Dashboard](docs/screenshots/health-dashboard.png)
+
 ## Features
 
 ### Agent Management

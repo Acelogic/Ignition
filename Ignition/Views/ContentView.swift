@@ -190,16 +190,23 @@ struct SidebarView: View {
             }
         }
         .onChange(of: sidebarSelection) {
-            switch sidebarSelection {
-            case .domain(let domain):
-                manager.selectedDomain = domain
-            case .healthDashboard:
-                manager.selectedDomain = nil
-            case nil:
-                break
-            }
+            syncSelection()
+        }
+        .onAppear {
+            syncSelection()
         }
         .animation(.smooth, value: sidebarSelection)
+    }
+
+    private func syncSelection() {
+        switch sidebarSelection {
+        case .domain(let domain):
+            manager.selectedDomain = domain
+        case .healthDashboard:
+            manager.selectedDomain = nil
+        case nil:
+            break
+        }
     }
 }
 

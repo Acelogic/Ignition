@@ -154,6 +154,67 @@
             border-radius: 50%;
         }
 
+        /* Screenshots */
+        .screenshots {
+            padding: 80px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .screenshots h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .screenshots .section-sub {
+            text-align: center;
+            color: var(--text2);
+            font-size: 18px;
+            margin-bottom: 48px;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .screenshot-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.25s ease;
+        }
+
+        .screenshot-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .screenshot-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 16px 20px 8px;
+        }
+
+        .screenshot-card p {
+            color: var(--text2);
+            font-size: 13px;
+            margin: 0 20px 16px;
+            line-height: 1.5;
+        }
+
         /* Features Grid */
         .features {
             padding: 80px 0;
@@ -359,6 +420,30 @@
             <span class="badge"><span class="dot" style="background: var(--accent)"></span> Swift 6</span>
             <span class="badge"><span class="dot" style="background: var(--green)"></span> SwiftUI</span>
             <span class="badge"><span class="dot" style="background: var(--purple)"></span> MIT License</span>
+        </div>
+    </div>
+</section>
+
+<section class="screenshots">
+    <div class="container">
+        <h2>See it in action</h2>
+        <p class="section-sub">A native macOS experience built entirely with SwiftUI.</p>
+        <div class="screenshot-grid">
+            <div class="screenshot-card">
+                <img src="screenshots/agent-list.png" alt="Agent List" loading="lazy">
+                <h3>Agent List</h3>
+                <p>Browse all launchd domains with status indicators, tags, and search.</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots/agent-detail.png" alt="Agent Detail" loading="lazy">
+                <h3>Agent Detail</h3>
+                <p>Action buttons, config properties, live logs, activity history, and plist editor.</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots/health-dashboard.png" alt="Health Dashboard" loading="lazy">
+                <h3>Health Dashboard</h3>
+                <p>Overview cards, problem detection, CPU/memory monitoring for running agents.</p>
+            </div>
         </div>
     </div>
 </section>
