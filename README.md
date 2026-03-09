@@ -7,6 +7,11 @@ Ignition is a free, open-source alternative to LaunchControl.
 ![macOS 15+](https://img.shields.io/badge/macOS-15%2B-blue)
 ![Swift 6](https://img.shields.io/badge/Swift-6-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
+[![Release](https://img.shields.io/github/v/release/Acelogic/Ignition)](https://github.com/Acelogic/Ignition/releases/latest)
+
+## Download
+
+**[Download Ignition v1.0.0](https://github.com/Acelogic/Ignition/releases/latest/download/Ignition-1.0.0.dmg)** — Open the DMG and drag Ignition to your Applications folder.
 
 ## Screenshots
 
